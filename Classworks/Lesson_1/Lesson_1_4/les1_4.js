@@ -1,0 +1,11 @@
+// let a='"abs"';
+// let b="'abs'";
+// console.log(a,b);
+// let c=`logo`;
+// console.log(c);
+let greeting='Hello';
+let intro='my name is Sonya';
+let msg=greeting+' '+intro;
+console.log(msg);
+let msg2=`${greeting}  ${intro}`;
+console.log(msg2);
