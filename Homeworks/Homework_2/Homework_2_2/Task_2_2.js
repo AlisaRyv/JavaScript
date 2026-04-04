@@ -12,4 +12,4 @@ let obj3= {
     title: `Книга 3`,
     pageCount: 300,
     genre: `Жанр 3`
-}
+};
