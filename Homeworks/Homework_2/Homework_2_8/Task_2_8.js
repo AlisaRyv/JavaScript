@@ -1,19 +1,15 @@
-let time=+prompt(`Введіть хвилини (від 0 до 59):`);
-if(time >= 0 && time < 15)
+let day=+prompt(`Введіть день (від 1 до 31):`);
+if(day >= 1 && day <= 10)
 {
-    console.log(`1 чверть`);
+    console.log(`1 декада`);
 }
-else if(time >= 15 && time < 30)
+else if(day > 10 && day <= 20)
 {
-    console.log(`2 чверть`);
-}else if(time >= 30 && time < 45)
+    console.log(`2 декада`);
+}else if(day > 20 && day <= 31)
 {
-    console.log(`3 чверть`);
-}else if(time >= 45 && time <= 59)
+    console.log(`3 декада`);
+} else
 {
-    console.log(`4 чверть`);
-}
-else
-{
-    console.log(`Помилка! Введено некоректний час.`);
+    console.log(`Помилка! Введено некоректний день.`);
 }
