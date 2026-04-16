@@ -1,31 +1,26 @@
-let users = [
-    {name: `vasya`, age: 31, status: false},
-    {name: `petya`, age: 30, status: true},
-    {name: `kolya`, age: 29, status: true},
-    {name: `olya`, age: 28, status: false},
-    {name: `max`, age: 30, status: true},
-    {name: `anya`, age: 31, status: false},
-    {name: `oleg`, age: 28, status: false},
-    {name: `andrey`, age: 29, status: true},
-    {name: `masha`, age: 30, status: true},
-    {name: `olya`, age: 31, status: false},
-    {name: `max`, age: 31, status: true}
-];
-console.log(`Users with status TRUE:`);
-for (const user of users) {
-    if(user.status) {
-        console.log(user);
-    }
+document.write(`  <div class="users-box">`);
+for (const user of usersList) {
+    document.write(`
+
+<div class="user-block">
+
+<h2>${user.id} – ${user.name} – ${user.username} </h2>
+
+    <h3>${user.email} – ${user.phone}</h3>
+
+    <div class="address-block">
+
+<p>City – ${user.address.city}</p>
+
+    <p>Street – ${user.address.street}</p>
+
+    <p>Suite – ${user.address.suite}</p>
+
+    <p>Zip code – ${user.address.zipcode}</p>
+
+</div>
+
+</div>
+`)
 }
-console.log(`Users with status FALSE:`);
-for (const user of users) {
-    if(user.status===false) {
-        console.log(user);
-    }
-}
-console.log(`Users with age more than 30:`);
-for (const user of users) {
-    if(user.age > 30) {
-        console.log(user);
-    }
-}
+document.write(`  </div>`);
