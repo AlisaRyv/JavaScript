@@ -1,6 +1,6 @@
 let i =0;
 while(i<20)
 {
-    document.write(`<div><h1>Hello!</h1></div>`)
+    document.write(`<h1>Hello!</h1>`)
     i++;
 }
