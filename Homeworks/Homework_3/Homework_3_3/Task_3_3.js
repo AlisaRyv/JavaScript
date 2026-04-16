@@ -1,5 +1,6 @@
-for(let i=0; i<10;i++){
-    document.write(`<div>
-      <h4>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, eligendi est facilis iure magni modi molestias nihil praesentium sed ut! ${i}</h4> 
-    </div>`);
+let i =0;
+while(i<20)
+{
+    document.write(`<div><h1>Hello!</h1></div>`)
+    i++;
 }
