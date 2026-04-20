@@ -1,7 +1,6 @@
-function square(a,b)
+function square_circle(r)
 {
-    return a*b;
+    return r*r*Math.PI;
 }
-let A=+prompt("Enter the Height of Rectangle: ");
-let B=+prompt("Enter the Width of Rectangle: ");
-console.log(square(A,B));
+let R=+prompt("Enter the Radius of Circle: ");
+console.log(square_circle(R));
