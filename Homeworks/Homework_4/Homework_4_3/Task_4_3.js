@@ -1,6 +1,11 @@
-function square_circle(r)
+function square_circle(r,h)
 {
-    return r*r*Math.PI;
+    return 2*r*r*Math.PI+h*perimeter_circle(r);
 }
-let R=+prompt("Enter the Radius of Circle: ");
-console.log(square_circle(R));
+function perimeter_circle(r)
+{
+    return 2*r*Math.PI;
+}
+let R=+prompt("Введите Радиус Цилиндра: ");
+let H=+prompt("Введите Высоту Цилиндра: ");
+console.log(square_circle(R,H));
