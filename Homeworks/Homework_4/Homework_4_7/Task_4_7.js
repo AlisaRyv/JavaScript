@@ -1,12 +1,11 @@
-function list(text, number)
+function list(array)
 {
     document.write(`<ul>`);
-    for (let i = 0; i < number; i++)
+    for (let element of array)
     {
-        document.write(`<li>${text}</li>`);
+        document.write(`<li>${element}</li>`);
     }
     document.write(`</ul>`);
 }
-let t=prompt("Enter a text: ");
-let n=+prompt("Enter a number: ");
-list(t,n);
+let arr=[`a`, 23, 90, true, `brak`, -35, false, 47, `b`, 5];
+list(arr);
