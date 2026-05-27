@@ -1,6 +1,3 @@
-function write(par)
-{
-    document.write(`<p>${par}</p>`);
-}
 let paragraph=prompt("Enter a paragraph: ");
-write(paragraph);
+let write=par=>document.write(`<p>${par}</p>`);
+console.log(write(paragraph));
