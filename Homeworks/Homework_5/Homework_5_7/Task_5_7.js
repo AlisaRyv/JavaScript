@@ -1,11 +1,11 @@
-function list(array)
+let t=prompt("Enter a text: ");
+let n=+prompt("Enter a number");
+function cycle(txt, num)
 {
-    document.write(`<ul>`);
-    for (let element of array)
+    for(let i=0;i<num;i++)
     {
-        document.write(`<li>${element}</li>`);
+        document.write(`<li>${txt}</li>`);
     }
-    document.write(`</ul>`);
 }
-let arr=[`a`, 23, 90, true, `brak`, -35, false, 47, `b`, 5];
-list(arr);
+let list = (text,number) => (document.write(`<ul>`), cycle(text,number), document.write(`</ul>`));
+console.log(list(t,n));
