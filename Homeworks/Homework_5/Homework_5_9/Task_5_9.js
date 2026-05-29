@@ -1,11 +1,3 @@
-function list_of_users(users)
-{
-    document.write(`<ul>`);
-    for (const user of users) {
-        document.write(`<li>${user.id} ${user.name} ${user.age}</li>`);
-    }
-    document.write(`</ul>`);
-}
 let arr = [
     {id:1, name: `mouse`, age: 31},
     {id:2, name: `kroko`, age: 32},
@@ -17,4 +9,5 @@ let arr = [
     {id:8, name: `horse`, age: 38},
     {id:9, name: `click`, age: 39},
 ]
+let list_of_users=arr=>(document.write(`<ul>`),arr.map(user=>document.write(`<li>${user.id} ${user.name} ${user.age}</li>`)),   document.write(`</ul>`));
 list_of_users(arr);
