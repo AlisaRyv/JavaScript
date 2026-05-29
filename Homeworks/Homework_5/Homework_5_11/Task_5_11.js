@@ -1,6 +1,6 @@
-let arr=[-23, 13, 45, 0, -345, -2, -56, 87];
-let min=arr[0];
-let i=1;
-let check = (ar,int)=>(int<ar.length?(int++,list(ar,int)):(console.log(`END!`),console.log(`${min}`)));
-let list=(arr,i)=>(arr[i]<min?(min=arr[i],check(arr,i)):check(arr,i));
-list(arr,i);
+let arr=[-13, 45, 0, -2, 87];
+let sum=0;
+let i=0;
+let check = (arr,i,sum)=>(i<arr.length-1?(i++,summator(arr,i,sum)):(console.log(`END!`),console.log(`${sum}`)));
+let summator=(arr,i,sum)=>(sum+=arr[i],console.log(`${sum}`),check(arr,i,sum));
+summator(arr,i,sum);
