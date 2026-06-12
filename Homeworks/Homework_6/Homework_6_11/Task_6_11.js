@@ -21,4 +21,30 @@ addingCartsToArray(`heart`);
 addingCartsToArray(`clubs`);
 console.log(deckOfCards);
 
+let deck = deckOfCards.reduce((acc, cur) => {
+        switch (cur.cardSuit) {
+            case `clubs`:
+                acc.clubs.push(cur);
+                break;
+            case `diamond`:
+                acc.diamonds.push(cur);
+                break;
+            case `heart`:
+                acc.hearts.push(cur);
+                break;
+            case `spade`:
+                acc.spades.push(cur);
+                break;
+        }
+        return acc;
+    },
+    {
+        spades: [],
 
+        diamonds: [],
+
+        hearts: [],
+
+        clubs: []
+    })
+console.log(deck);
