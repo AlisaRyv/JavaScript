@@ -17,5 +17,7 @@ let array=[
     new User(8,`Gray`, `Hiker`, `gray@gmail.com`,12345123),
     new User(9,`Lui`, `Luy`, `lui@gmail.com`,12345012),
     new User(10,`Mark`, `Quiet`, `mark@gmail.com`,12345345),
-]
+];
 console.log(array);
+let filteredArray=array.filter(item=>item.id%2===0);
+console.log(filteredArray);
