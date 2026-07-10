@@ -25,3 +25,6 @@ let array=[
     new Client(100,`Mark`, `Quiet`, `mark@gmail.com`,12345345,new Product(`watch`,2500)),
 ];
 console.log(array);
+
+let filterArray=array.sort((a,b)=>a.order.length-b.order.length);
+console.log(filterArray);
