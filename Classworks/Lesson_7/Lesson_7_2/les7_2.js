@@ -19,7 +19,7 @@ function User(name,age)
 //     return `Hello my name is ${this.name} !`;
 // }
 // let user = new User("John",32);
-// console.log(user);
+// console.log(user.greeting());
 
 // let user1 = new User(`ivan`,23);
 //
@@ -31,10 +31,10 @@ function User(name,age)
 // let user2 = new User(`iva`,3);
 // console.log(user1.greeting.apply(user2));
 
-let user = new User('vasya', 31);
-user.greeting = function (msg) {
-    return `${msg} my name is ${this.name} `;
-};
-let user2 = new User('petya', 123123);
-let greetingCopy = user.greeting.bind(user2);
-console.log(greetingCopy('quwteyqwfe'));
+// let user = new User('vasya', 31);
+// user.greeting = function (msg) {
+//     return `${msg} my name is ${this.name} `;
+// };
+// let user2 = new User('petya', 123123);
+// let greetingCopy = user.greeting.bind(user2);
+// console.log(greetingCopy('quwteyqwfe'));
