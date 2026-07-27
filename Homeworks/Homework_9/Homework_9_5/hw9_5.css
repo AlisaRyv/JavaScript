@@ -1,0 +1,25 @@
+.item {
+    display: flex;
+    background-color: green;
+    width: 100vw;
+    height: 100vh;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.duration {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3rem;
+}
+.item hr{
+    background-color: darkgreen;
+    width: 100vw;
+    height: 1vh;
+    border: none;
+}
